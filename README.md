@@ -1,1 +1,2 @@
-Repositorio destinado ao material escolar do curso: Informatica para Negocios - Sao Bernardo do Campo
+Engenharia de software - Semestre 3
+Linguagem de programacao I - Semestre 3

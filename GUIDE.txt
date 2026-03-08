@@ -1,0 +1,28 @@
+------------- Sync:
+
+Codespace > repository
+git add -A
+git commit -m "update"
+git push origin main
+
+Repository > codespace
+git fetch origin
+git pull origin main
+
+------------- Check branch:
+git branch
+
+------------- Pull normal path:
+git pull origin main
+
+------------- Forced sync (STOROZHNO!):
+
+Codespace > repository
+git add -A
+git commit -m "update"
+git push -f origin main
+
+Repository > codespace
+git fetch origin
+git reset --hard origin/main
+
