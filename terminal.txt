@@ -1,4 +1,4 @@
-Sincronizacao:
+------------- Sincronizacao:
 
 Codespace > repositório
 git add -A
@@ -9,16 +9,13 @@ Repositorio > codespace
 git fetch origin
 git pull origin main
 
-
-Conferir branch:
+------------- Conferir branch:
 git branch
 
-
-Puxar fluxo normal:
+------------- Puxar fluxo normal:
 git pull origin main
 
-
-Sincronizacao forcada (CUIDADO!):
+------------- Sincronizacao forcada (CUIDADO!):
 
 Codespace > repositorio
 git add -A
@@ -28,3 +25,4 @@ git push -f origin main
 Repositorio > codespace
 git fetch origin
 git reset --hard origin/main
+
