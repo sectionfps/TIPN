@@ -1,4 +1,4 @@
-Sincronizacao terminal:
+Sincronizacao:
 
 Codespace > repositório
 git add -A
@@ -18,3 +18,11 @@ Puxar fluxo normal:
 git pull origin main
 
 
+Sincronizacao forcada:
+
+Codespace > repositório
+git push -f origin main
+
+Repositorio > codespace
+git fetch origin
+git reset --hard origin/main
