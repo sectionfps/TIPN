@@ -31,7 +31,7 @@
             <!-- INÍCIO Input nome -->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Nome do produto
                 </label>
                 <div class="col-sm-4">
                     <input type="text" name="nome" class="form-control" placeholder="Digite o nome do produto">
@@ -42,7 +42,7 @@
             <!-- INÍCIO Input desc -->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Descricao
                 </label>
                 <div class="col-sm-4">
                     <input type="text" name="descricao" class="form-control" placeholder="Digite a descrição">
@@ -53,7 +53,7 @@
             <!-- INÍCIO Input valor -->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Valor
                 </label>
                 <div class="col-sm-4">
                     <input type="number" name="valor" class="form-control" placeholder="Digite o valor">
@@ -64,7 +64,7 @@
             <!-- INÍCIO Input origem -->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Origem
                 </label>
                 <div class="col-sm-4">
                     <input type="text" name="origem" class="form-control" placeholder="Digite a origem">
@@ -75,7 +75,7 @@
             <!-- INÍCIO Input setor-->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Setor
                 </label>
                 <div class="col-sm-4">
                     <select>
@@ -89,10 +89,32 @@
             <!-- INÍCIO Input img-->
             <div class="form-group">
                 <label class="control-label">
-                    Nome
+                    Imagem
                 </label>
                 <div class="col-sm-4">
                     <input type="file" name="imagem" class="file-style" placeholder="Digite">
+                </div>
+            </div>
+            <!-- FINAL Input -->
+            
+            <!-- INÍCIO Input edit -->
+            <div class="form-group">
+                <label class="control-label">
+                    Editar
+                </label>
+                <div class="col-sm-4">
+                    <input type="button" value="Remover" class="btn btn-secondary">
+                </div>
+            </div>
+            <!-- FINAL Input -->
+            
+            <!-- INÍCIO Input rmv-->
+            <div class="form-group">
+                <label class="control-label">
+                    Remover
+                </label>
+                <div class="col-sm-4">
+                    <input type="button" value="Remover" class="btn btn-danger">
                 </div>
             </div>
             <!-- FINAL Input -->
