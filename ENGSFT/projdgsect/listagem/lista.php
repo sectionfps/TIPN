@@ -1,61 +1,121 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-    <meta chart="utf-8">
-    <title>Sistema ZERO BALA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Listinha</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Produtos Radicais</h1>
-            <p>Cadastro de produtos</p>
-        </div>
 
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th> ID </th>
-                    <th> Nome </th>
-                    <th> Descrição </th>
-                    <th> Valor </th>
-                    <th> Origem </th>
-                    <th> Setor </th>
-                    <th> Imagem </th>
-                    <th> Editar </th>
-                    <th> Remover </th>
-                </tr>
-            </thead>
-            
-            <tr>                    
-                <td> 9 </td>
-                <td> Controle Xbox</td>
-                <td> Astral Púrpura </td>
-                <td> R$ 499,99 </td>
-                <td> Osasco </td>
-                <td> Games </td>
-                <td> Imagem </td>
-                <td> 
-                    <form>
-                        <button type="submit"
-                            class="btn btn-default">
-                                Editar
-                        </button>
+<div class="container mt-4">
 
-                    </form>
-                <td> 
-                        <form>
-                            <button type="submit"
-                                class="btn btn-default">
-                                    REMOVER
-                            </button>
+	<!-- Substituindo jumbotron -->
+	<div class="p-4 mb-4 bg-light rounded">
+		<h1>Listagem de Produtos</h1>
+		<p>Produtos fofos!</p>
+	</div>
 
-                        </form>
-                </td>
-            </tr>
+	<!-- Navegação -->
+	<ul class="nav nav-tabs mb-3">
+		<li class="nav-item">
+			<a class="nav-link" href="../Cadastro/cadastro.php">
+				Cadastrar Produto
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="#">
+				Lista Produtos
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">
+				Usuários
+			</a>
+		</li>
+	</ul>
 
-        </table>
-    </div>
+	<!-- Tabela -->
+	<table class="table table-striped">
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Área</th>
+			<th>Preço</th>
+			<th>Moeda</th>
+			<th>País</th>
+			<th>Editar</th>
+			<th>Visualizar</th>
+		</tr>
+
+		<tr>
+			<td>Mouse Gamer</td>
+			<td>RGB 7200 DPI</td>
+			<td>Periféricos</td>
+			<td>150</td>
+			<td>R$</td>
+			<td>Brasil</td>
+			<td><button class="btn btn-warning btn-sm">Editar</button></td>
+			<td><button class="btn btn-info btn-sm">Visualizar</button></td>
+		</tr>
+
+		<tr>
+			<td>Teclado Mecânico</td>
+			<td>Switch Blue</td>
+			<td>Periféricos</td>
+			<td>350</td>
+			<td>R$</td>
+			<td>China</td>
+			<td><button class="btn btn-warning btn-sm">Editar</button></td>
+			<td><button class="btn btn-info btn-sm">Visualizar</button></td>
+		</tr>
+
+		<tr>
+			<td>Monitor 24"</td>
+			<td>Full HD</td>
+			<td>Hardware</td>
+			<td>900</td>
+			<td>R$</td>
+			<td>Brasil</td>
+			<td><button class="btn btn-warning btn-sm">Editar</button></td>
+			<td><button class="btn btn-info btn-sm">Visualizar</button></td>
+		</tr>
+
+	</table>
+
+	<!-- Paginação fake -->
+	<div class="row justify-content-center">
+		<nav>
+			<ul class="pagination">
+				<li class="page-item">
+					<a class="page-link" href="#">&laquo;</a>
+				</li>
+
+				<li class="page-item active">
+					<a class="page-link" href="#">1</a>
+				</li>
+
+				<li class="page-item">
+					<a class="page-link" href="#">2</a>
+				</li>
+
+				<li class="page-item">
+					<a class="page-link" href="#">3</a>
+				</li>
+
+				<li class="page-item">
+					<a class="page-link" href="#">&raquo;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+</div>
+
 </body>
 </html>
